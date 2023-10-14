@@ -1,6 +1,6 @@
 # iTunes Mobile
 
-Android Coding Challenge using iTunes Search API. Written in Kotlin + MVVM pattern.
+Android Coding Challenge using iTunes Search API. Written in Kotlin + Clean Architecture/MVVM pattern.
 
 ## Download
 
@@ -17,6 +17,10 @@ https://github.com/mayannpalencia/itunes-mobile/assets/49086494/f77c8943-7a71-43
 * AGP 8.0.2
 * Android Studio Iguana | 2023.2.1 Canary 4
 
+## Architecture
+* MVVM - Used in the presentation layer of the app
+* Clean Architecture - Used so the app will have separate layers (Data, Domain, Network, Persistence, Presentation/UI) and have reusability
+ 
 ## Libraries
 
 --------------
