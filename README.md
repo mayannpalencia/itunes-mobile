@@ -4,7 +4,7 @@ Android Coding Challenge using iTunes Search API. Written in Kotlin + Clean Arch
 
 ## Download
 
-Download APK Installer [here](https://www.dropbox.com/scl/fi/9w37qctj3u89x42da2ako/itunes-mobile_1.0.apk?rlkey=oa0h19vx5uiv8dm2pox31krcj&dl=1)
+Download APK Installer [here](https://www.dropbox.com/scl/fi/oxhbcabg4ax3eyp3i6i3l/itunes-mobile_1.0.apk?rlkey=69kjr9pwna790p4vunog0xy6a&dl=1)
 
 ## Preview
 https://github.com/mayannpalencia/itunes-mobile/assets/49086494/f77c8943-7a71-43fd-9a16-8af52cf337cc
