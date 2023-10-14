@@ -1,6 +1,6 @@
 package com.mayann.data.module
 
-import com.mayann.data.repository.track.TrackRepositoryImpl
+import com.mayann.data.repository.TrackRepositoryImpl
 import com.mayann.network.features.track.TrackRemoteSource
 import dagger.Module
 import dagger.Provides

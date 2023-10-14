@@ -3,15 +3,12 @@ package com.mayann.itunesmobile.features.main
 import android.content.Intent
 import androidx.activity.viewModels
 import androidx.core.content.ContextCompat
-import androidx.core.view.isGone
 import androidx.core.view.isInvisible
-import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
-import androidx.lifecycle.repeatOnLifecycle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.mayann.itunesmobile.R
 import com.mayann.itunesmobile.databinding.ActivityMainBinding
-import com.mayann.itunesmobile.extensions.gone
+import com.mayann.itunesmobile.extensions.hideSoftKeyboard
 import com.mayann.itunesmobile.extensions.prettyFormatTime
 import com.mayann.itunesmobile.extensions.setCustomColorSchemeColors
 import com.mayann.itunesmobile.extensions.setRefreshState
@@ -148,6 +145,8 @@ class MainActivity : BaseActivity<ActivityMainBinding>(
                     } else {
                         viewModel.searchTracks(s.toString())
                     }
+
+                    hideSoftKeyboard()
                 }
             )
         }

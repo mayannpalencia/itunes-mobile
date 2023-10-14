@@ -69,8 +69,6 @@ dependencies {
     implementation(libs.shimmer)
     implementation(libs.glide)
     implementation(libs.javapoet)
-    implementation(libs.mockk)
-    testImplementation(libs.mockwebserver)
 
     implementation(libs.hilt.android)
     kapt(libs.hilt.compiler)

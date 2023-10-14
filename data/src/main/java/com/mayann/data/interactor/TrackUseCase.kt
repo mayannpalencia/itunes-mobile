@@ -1,6 +1,6 @@
 package com.mayann.data.interactor
 
-import com.mayann.data.repository.track.TrackRepositoryImpl
+import com.mayann.data.repository.TrackRepositoryImpl
 import javax.inject.Inject
 
 class TrackUseCase @Inject constructor(
