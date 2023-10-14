@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/shimmer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/view_section_1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="17dp"
+                android:background="@drawable/shimmer_placeholder_rectangle"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/view_section_2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="17dp"
+                android:background="@drawable/shimmer_placeholder_rectangle"
+                app:layout_constraintTop_toBottomOf="@+id/view_section_1" />
+
+            <View
+                android:id="@+id/view_section_3"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="17dp"
+                android:background="@drawable/shimmer_placeholder_rectangle"
+                app:layout_constraintTop_toBottomOf="@+id/view_section_2" />
+
+            <View
+                android:id="@+id/view_section_4"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="17dp"
+                android:background="@drawable/shimmer_placeholder_rectangle"
+                app:layout_constraintTop_toBottomOf="@+id/view_section_3" />
+
+            <View
+                android:id="@+id/view_section_5"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="17dp"
+                android:background="@drawable/shimmer_placeholder_rectangle"
+                app:layout_constraintTop_toBottomOf="@+id/view_section_4" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</com.facebook.shimmer.ShimmerFrameLayout>

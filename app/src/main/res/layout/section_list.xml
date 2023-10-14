@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_5sdp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewTrack"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_5sdp"
+            android:visibility="visible"
+            tools:context=".view.ui.MainActivity"
+            tools:listitem="@layout/item_list"
+            tools:showIn="@layout/activity_main" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:id="@+id/emptyView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="@string/no_search_result"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15sdp" />
+
+    <include
+        android:id="@+id/layout_shimmer"
+        layout="@layout/shimmer_loader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        tools:visibility="invisible" />
+
+</FrameLayout>

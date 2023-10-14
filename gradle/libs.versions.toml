@@ -1,0 +1,80 @@
+[versions]
+agp = "8.0.2"
+kotlin = "1.9.0"
+ksp = "1.9.10-1.0.13"
+kapt = "1.9.0"
+core-ktx = "1.12.0"
+androidx-test-ext-junit = "1.1.5"
+espresso-core = "3.5.1"
+lifecycle-runtime-ktx = "2.6.2"
+appcompat = "1.6.1"
+activity = "1.8.0"
+material = "1.10.0"
+swiperefreshlayout = "1.1.0"
+constraintlayout = "2.1.4"
+coroutines = "1.7.3"
+http-logging = "4.10.0"
+kotlinx-serialization = "1.3.0"
+kotlinx-serialization-converter = "0.8.0"
+okhttp = "4.10.0"
+mockwebserver = "4.9.3"
+retrofit = "2.9.0"
+hilt = "2.48.1"
+paging = "3.2.1"
+room = "2.5.2"
+datastore = "1.0.0"
+lifecycle = "2.6.2"
+sdp = "1.1.0"
+shimmer = "0.5.0"
+glide = "4.16.0"
+javapoet = "1.13.0"
+junit = "4.13.2"
+mockk = "1.13.4"
+truth = "1.1.3"
+
+[libraries]
+core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
+androidx-test-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-test-ext-junit" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso-core" }
+lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle-runtime-ktx" }
+activity-ktx = { group = "androidx.activity", name = "activity-ktx", version.ref = "activity" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+swiperefreshlayout = { group = "androidx.swiperefreshlayout", name = "swiperefreshlayout", version.ref = "swiperefreshlayout" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+kotlinx-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutines" }
+kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutines" }
+logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "http-logging" }
+kotlinx-serialization-properties = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-properties", version.ref = "kotlinx-serialization" }
+kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinx-serialization" }
+kotlinx-serialization-converter = { group = "com.jakewharton.retrofit", name = "retrofit2-kotlinx-serialization-converter", version.ref = "kotlinx-serialization-converter" }
+okHttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" }
+mockwebserver = { group = "com.squareup.okhttp3", name = "mockwebserver", version.ref = "mockwebserver" }
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+converter-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
+paging-runtime-ktx = { group = "androidx.paging", name = "paging-runtime-ktx", version.ref = "paging" }
+room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+datastore-preferences = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "datastore" }
+lifecycle-livedata-ktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycle" }
+lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
+sdp-android = { group = "com.intuit.sdp", name = "sdp-android", version.ref = "sdp" }
+shimmer = { group = "com.facebook.shimmer", name = "shimmer", version.ref = "shimmer" }
+glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
+javapoet = { group = "com.squareup", name = "javapoet", version.ref = "javapoet" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+mockk = { group = "io.mockk", name = "mockk", version.ref = "mockk" }
+kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutines" }
+truth = { group = "com.google.truth", name = "truth", version.ref = "truth" }
+
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kapt" }
+daggerHilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+

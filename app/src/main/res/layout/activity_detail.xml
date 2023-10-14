@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    app:statusBarBackground="@android:color/transparent"
+    tools:context=".features.detail.DetailActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:id="@+id/imageBackground"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200sdp"
+                android:alpha="0.2"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image_placeholder"
+                app:layout_collapseMode="parallax"
+                tools:ignore="ContentDescription" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@android:color/transparent"
+                app:layout_collapseMode="pin"
+                app:navigationIcon="@drawable/ic_back"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageArtWork"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:background="@android:color/transparent"
+                android:elevation="@dimen/_6sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image_placeholder"
+                android:transitionName="artWork"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/_70sdp"
+                app:cardElevation="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageFavorite"
+                    android:layout_width="wrap_content"
+                    android:padding="@dimen/_3sdp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_favorite_off"
+                    tools:ignore="ContentDescription" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/layoutDetail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_15sdp"
+                app:cardCornerRadius="@dimen/_5sdp"
+                app:cardElevation="@dimen/_5sdp"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/layoutTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_marginStart="@dimen/_120sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:orientation="vertical"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/textTrackName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:fontFamily="@font/roboto_black"
+                            android:maxLines="3"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/_18sdp"
+                            android:transitionName="trackTitle"
+                            app:autoSizeMaxTextSize="@dimen/_18sdp"
+                            app:autoSizeMinTextSize="@dimen/_10sdp"
+                            app:autoSizeStepGranularity="@dimen/_2sdp"
+                            app:autoSizeTextType="uniform"
+                            tools:text="A Star Is Born (2018)" />
+
+                        <TextView
+                            android:id="@+id/textPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/roboto_regular"
+                            android:gravity="bottom"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/_11sdp"
+                            android:transitionName="trackPrice"
+                            tools:text="AUD 14.99" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textGenre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/_13sdp"
+                        android:transitionName="trackGenre"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/layoutTitle"
+                        tools:text="Romance" />
+
+                    <TextView
+                        android:id="@+id/textDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:padding="@dimen/_15sdp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/_13sdp"
+                        android:transitionName="trackGenre"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textGenre"
+                        tools:text="Seasoned musician Jackson Maine (Bradley Cooper) discovers—and falls in love with—struggling artist Ally (Lady Gaga). She has just about given up on her dream to make it big as a singer… until Jack coaxes her into the spotlight. But even as Ally’s career takes off, the personal side of their relationship is breaking down, as Jack fights an ongoing battle with his own internal demons." />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

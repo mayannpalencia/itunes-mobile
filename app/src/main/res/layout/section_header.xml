@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:padding="@dimen/_5sdp">
+
+    <TextView
+        android:id="@+id/textAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:drawableStart="@drawable/ic_logo"
+        android:drawablePadding="@dimen/_5sdp"
+        android:fontFamily="@font/roboto_black"
+        android:gravity="center_vertical"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_30sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UseCompatTextViewDrawableXml" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/layoutSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textAppName">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editTextTerm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:drawableStart="@drawable/ic_search"
+                android:drawablePadding="@dimen/_5sdp"
+                android:drawableTint="@color/colorAccent"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="@string/search_hint"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:padding="@dimen/_10sdp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray_light"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="Autofill" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textLastVisited"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:drawableStart="@drawable/ic_history"
+        android:drawablePadding="@dimen/_5sdp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/last_visit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_11sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutSearch"
+        tools:ignore="UseCompatTextViewDrawableXml" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
