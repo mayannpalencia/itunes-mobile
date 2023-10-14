@@ -4,7 +4,7 @@ Android Coding Challenge using iTunes Search API. Written in Kotlin + Clean Arch
 
 ## Download
 
-Download APK Installer [here](https://www.dropbox.com/scl/fi/9w37qctj3u89x42da2ako/itunes-mobile_1.0.apk?rlkey=oa0h19vx5uiv8dm2pox31krcj&dl=1)
+Download APK Installer [here](https://www.dropbox.com/scl/fi/oxhbcabg4ax3eyp3i6i3l/itunes-mobile_1.0.apk?rlkey=69kjr9pwna790p4vunog0xy6a&dl=1)
 
 ## Preview
 https://github.com/mayannpalencia/itunes-mobile/assets/49086494/f77c8943-7a71-43fd-9a16-8af52cf337cc
@@ -30,8 +30,8 @@ https://github.com/mayannpalencia/itunes-mobile/assets/49086494/f77c8943-7a71-43
    * [ActivityX][3]
 * [Architecture][4]
    * [Lifecycles][5]
-   * [Coroutines Flow][6]
-   * [Room][7]
+   * [Flow][6] - I used Flow over LiveData to not worry about life cycle dependencies. Flows emit values inside of suspend functions, so it makes sense to use this in this challenge since the functions are straightforward like grabbing the data and updating the UI
+   * [Room][7] 
    * [ViewModel][8]
 * [UI][9]
    * [Material Design][10]
@@ -95,7 +95,10 @@ https://github.com/mayannpalencia/itunes-mobile/assets/49086494/f77c8943-7a71-43
   
    - Search Field - add Text Watcher to listen to any user inputs
   
-4. Data Persistence
+4. Favorite Items
+   - Marking items as favorites in master/detail screens
+  
+5. Data Persistence
 
    - Last date of visit - displayed above the result list.
   
@@ -103,7 +106,7 @@ https://github.com/mayannpalencia/itunes-mobile/assets/49086494/f77c8943-7a71-43
    
    - Last track selected - The application remembers the last tracked opened so when the app is destroyed, it has the ability to go to the Detail screen if it is the last screen visited, and retrieve the value of the track based on this saved ID.
   
-5. Offline Support 
+6. Offline Support 
 
    - Even though the network is not available on the user device, the result list will be retrieved from a cached repository.
 
