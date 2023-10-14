@@ -4,7 +4,7 @@ Android Coding Challenge using iTunes Search API. Written in Kotlin + Clean Arch
 
 ## Download
 
-Download APK Installer [here](https://app.bitrise.io/app/a65b4597-e4c4-423d-8003-f9b22e650289/build/0912b263-09a4-4ccd-85db-06ad5d8ac177/artifact/3f192fed80a714b1/p/be6693e9aa001d01e9cc9e2bdd55be20)
+Download APK from Bitrise [here](https://app.bitrise.io/app/a65b4597-e4c4-423d-8003-f9b22e650289/build/0912b263-09a4-4ccd-85db-06ad5d8ac177/artifact/3f192fed80a714b1/p/be6693e9aa001d01e9cc9e2bdd55be20)
 
 ## Preview
 https://github.com/mayannpalencia/itunes-mobile/assets/49086494/f77c8943-7a71-43fd-9a16-8af52cf337cc
