@@ -47,9 +47,12 @@ https://github.com/mayannpalencia/itunes-mobile/assets/49086494/f77c8943-7a71-43
    * [Hilt][19]
    * [Kotlin Coroutines][20]
    * [Kotlin Serialization (Properties, JSON][21]
-* Unit Test
-   * [JUnit4][22]
-   * [MockWebServer][23]
+* Persistence
+   * [Room][22] - I used room cause I am familiar with generating SQL queries and it has fewer boilerplate codes
+   * [Data store][23] - I used datastore instead of SharedPreferences to take advantage of coroutines and flow
+* Unit Test - Implemented in network module
+   * [JUnit4][24]
+   * [MockWebServer][25]
 
 [0]: https://developer.android.com/jetpack/components
 [1]: https://developer.android.com/jetpack/androidx/releases/core
@@ -73,8 +76,10 @@ https://github.com/mayannpalencia/itunes-mobile/assets/49086494/f77c8943-7a71-43
 [19]: https://developer.android.com/training/dependency-injection/hilt-android
 [20]: https://kotlinlang.org/docs/reference/coroutines-overview.html
 [21]: https://kotlinlang.org/docs/serialization.html
-[22]: https://junit.org/junit4/
-[23]: https://github.com/square/okhttp/tree/master/mockwebserver
+[22]: https://developer.android.com/jetpack/androidx/releases/room
+[23]: https://developer.android.com/topic/libraries/architecture/datastore
+[24]: https://junit.org/junit4/
+[25]: https://github.com/square/okhttp/tree/master/mockwebserver
 
 
 
@@ -83,7 +88,7 @@ https://github.com/mayannpalencia/itunes-mobile/assets/49086494/f77c8943-7a71-43
 1. Display result list based on iTunes Search API call. Each item or track on the list displayed the following:
 
    * Track Name
-   * ArtWork
+   * Artwork
    * Track Price
    * Primary Genre
   
