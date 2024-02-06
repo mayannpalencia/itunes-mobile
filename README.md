@@ -1,6 +1,6 @@
 # iTunes Mobile
 
-Android Coding Challenge using iTunes Search API. Written in Kotlin + Clean Architecture/MVVM pattern.
+A demo Android app written in Kotlin + Clean Architecture/MVVM pattern. Utilizes iTunes Search API.
 
 ## Download
 
