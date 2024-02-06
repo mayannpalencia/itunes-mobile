@@ -15,5 +15,5 @@ import kotlinx.parcelize.Parcelize
 @Parcelize
 data class Response(
     val resultCount: Int? = 0,
-    val results: List<Track>? = emptyList(),
+    val results: List<Track>? = emptyList()
 ) : Parcelable

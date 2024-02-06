@@ -18,6 +18,7 @@ import javax.inject.Singleton
 @Module
 @InstallIn(SingletonComponent::class)
 class DataSourceModule {
+
     @Singleton
     @Provides
     fun provideDataStoreModule(@ApplicationContext ctx: Context) =

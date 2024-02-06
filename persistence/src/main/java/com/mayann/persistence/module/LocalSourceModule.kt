@@ -19,4 +19,5 @@ class LocalSourceModule {
 
     @Provides
     fun provideSessionLocalSource(dataStore: ItunesDataStore) = SessionLocalSource(dataStore)
+
 }

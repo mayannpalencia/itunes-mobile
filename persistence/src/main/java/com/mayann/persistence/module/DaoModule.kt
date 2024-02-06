@@ -25,4 +25,5 @@ class DaoModule{
     @ViewModelScoped
     fun providesTrackDao(@ApplicationContext appContext: Context): TrackDao = Room.databaseBuilder(appContext, ItunesDatabase::class.java, "itunes_database")
             .fallbackToDestructiveMigration().build().trackDao()
+
 }
